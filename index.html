@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-</head>
-<body>
-    
-    <script src="./assets/script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript Coding Quiz</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+
+    <body> 
+        <header>
+            <h2 id="view-high-scores">View High Scores</h2> 
+            <h2 class="timer">Time Remaining: <span id="timer"></span></h2>
+        </header>
+
+        <section id="intro-container" class="show">
+            <div class="container start">
+                <h1>JavaScript Coding Quiz</h1>  
+                <p>Test your JavaScript knowledge by taking this timed quiz!<br>
+                Rules:
+                <ul>
+                    <li>Answer all questions before timer gets to 0</li>
+                    <li>Correct answers earn +10 points each</li>
+                    <li>Each incorrect answer decreases timer by 10 seconds</li>
+                </ul>
+                </p>
+                <button class="btn startend" id="start-game">Start Quiz</button>
+            </div>    
+        </section>
+
+        <section id="question-container" class="hide">
+            <div class="container questions">
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+        </section>
+
+        <section id="end-container" class="hide">
+           <div class="container end">
+            <div id=score-banner>
+                <h1>Done!</h1>
+            </div>  
+            <form id="initials-form" class="initials">
+              <p> Enter Initials:
+                <input type="text" name="initials" id="initials" class="text-input" />
+                <button class="btn startend" id="sumbit-score" type="submit">Submit</button> </p>
+              </form>
+            </div>
+        </section>
+
+        <div id="high-score-container" class="hide">
+          <div class="high-scores container">
+            <h1 class="high-score">High Scores</h1>
+            <ol id="high-score-list" class="score-list"></ol>
+        <div>
+            <button class="btn" id="go-back">Home</button>
+            <button class="btn" id="clear-high-scores">Clear</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="hide" id="correct">
+        <h2>Correct! +10 points </h2>
+    </div>
+    <div class="hide" id="wrong">
+        <h2>Incorrect! -10 seconds</h2>
+    </div>
+
+    <script src="./assets/script.js"></script> 
 </body>
 </html>
