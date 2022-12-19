@@ -8,16 +8,16 @@
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    background-color: lightblue;
+    margin: 10%; 
+    background: linear-gradient(white, lightblue, white);
 }
   
 header {
-      display: flex;
-      justify-content: space-between;
-      margin: auto;
-      width: 65%;
-      font-size: 2rem;
+    display:inline-block;
+    margin: auto;
+    width: 65%;
+    font-size: 2rem;
+    color: black;
 }
 
 #view-high-scores:hover {
@@ -43,10 +43,10 @@ header h4 {
 }
 
 .container ul li {
-    background-color: lightblue;
     font-size: 2.0rem;
-    text-align: left;
-    padding: 5px;
+    text-align: center;
+    list-style: none;
+    padding: 6px;
 }
   
 h1 {
@@ -112,18 +112,19 @@ p {
 }
 
 #high-score {
-      text-align: left;
+    text-align: left;
 }
 
 /*Button Styling */
 .btn {
     background: crimson;
     color: whitesmoke;
-    padding: 6px;
+    padding: 8px;
     border-radius: 40px;
     border: black, 1px;
-    box-shadow: 0 1px grey;
     margin-top: 10px;
+    font-size: 2rem;
+    width:45%;
 }
 
 .btn:hover {
@@ -155,12 +156,10 @@ p {
 }
 
 .answerbtn {
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: 2.0vw;
 }
-
- /* correct/wrong styling */
 
 .banner {
     font-size: 24px;
@@ -181,35 +180,23 @@ p {
  
 ol {
     list-style-type: number;
-}
-
-li:nth-child(odd) {
-    background-color: rgba(228, 151, 164, 0.5);;
-}
-
-li {
-    font-size: 4.0vw;
+    font-size: 3.0vw;
 }
 
 /* media query for smaller screens */
 
 @media screen and (max-width: 1024px) {
-
     .btn {
         width: 100%;
-        font-size: 3.0vw;
+        font-size: 3.1vw;
     }
-
     #question {
-        font-size: 4.5vw;
+        font-size: 4.4vw;
     }
-
     h1 {
-        font-size: 4.5vw;
+        font-size: 4.4vw;
     }
-
     p {
-        font-size: 3.0vw;
+        font-size: 3.1vw;
     }
-
 }
