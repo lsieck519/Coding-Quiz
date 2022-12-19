@@ -17,7 +17,7 @@ header {
     margin: auto;
     width: 65%;
     font-size: 2rem;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #view-high-scores:hover {
@@ -53,15 +53,12 @@ h1 {
     font-size: 4.0rem;
     font-weight: bold;
     letter-spacing: 0.1em;
+    text-decoration: overline underline;
 }
 
 .container p {
-    font-size: 4.0rem;
+    font-size: 3.0rem;
     line-height: 1.6;
-}
-
-p {
-    font-size: 2.0rem;
 }
 
 .start {
@@ -115,12 +112,11 @@ p {
     text-align: left;
 }
 
-/*Button Styling */
 .btn {
     background: crimson;
     color: whitesmoke;
     padding: 8px;
-    border-radius: 40px;
+    border-radius: 20px;
     border: black, 1px;
     margin-top: 10px;
     font-size: 2rem;
@@ -128,7 +124,7 @@ p {
 }
 
 .btn:hover {
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor:pointer;
 }
