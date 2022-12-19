@@ -27,12 +27,12 @@ var btnClearScores = document.querySelector('#clear-high-scores');
 //High Score Array
 var HighScores = [];
 
- //assign array details for questions 
+
 var shuffledQuestions;
 var QuestionIndex = 0;
 
 
-// The array of questions for our quiz game.
+// array of questions with answers 
 var questions = [
   { q: 'What can arrays in JavaScript be used to store?', 
     a: 'd. all of the above', 
@@ -166,7 +166,7 @@ QuestionIndex++
   }
 }
 
-//Display total score at end of game
+//show total score at end of game
 var showScore = function() {
   questionContainer.classList.add('hide');
   endContainer.classList.remove('hide');
