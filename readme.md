@@ -25,4 +25,7 @@ Given I am taking a timed coding quiz on JavaScript Fundamentals
 
 ## Preview:
 
+<img width="956" alt="Quiz Preview" src="https://user-images.githubusercontent.com/99048123/208530490-1844d961-7633-424c-8d14-1fc175dc6939.png">
+
+
 ## Link:
