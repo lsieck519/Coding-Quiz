@@ -29,3 +29,5 @@ Given I am taking a timed coding quiz on JavaScript Fundamentals
 
 
 ## Link:
+
+https://lsieck519.github.io/Coding-Quiz/
